@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Checker</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>โปรแกรมแสดงการทดสอบ</h1>
+        <form id="loanForm">
+            <label for="age">อายุของผู้สมัคร (ปี):</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="term">ระยะเวลาผ่อนชำระ (ปี):</label>
+            <input type="number" id="term" name="term" required>
+
+            <button type="button" onclick="checkEligibility()">ตรวจสอบ</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="loan.js"></script>
+</body>
+</html>
